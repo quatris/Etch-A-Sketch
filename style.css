@@ -65,6 +65,22 @@ body {
     font-size: 18px;
   }
 
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .slider {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .slider-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
 
    /* Make the squares responsive */
    @media (max-width: 600px) {
