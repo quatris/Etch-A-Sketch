@@ -1,7 +1,51 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
-    background-color: #ddd;
+    background-color: #585962;
     font-family: sans-serif;
+    box-sizing: border-box;
   }
+
+  /* Hero Section */
+.hero-section {
+  background-image: url('./images/cyberbanner.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sliderDiv{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #acacbe;
+}
+
   .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -26,44 +70,34 @@ body {
     margin-top: 20px;
   }
 
-  .button {
-    display: inline-block;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+  button {
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0px 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-  }
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 3px;
   
-  .button:hover {
-    background-color: #3e8e41;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-  
-  #rainbowButton {
-    background-color: #FFC107;
-    padding: 12px 25px;
-    font-size: 18px;
-  }
+}
+
+button:hover {
+    background-color: #3E8E41;
+}
   
   #blackButton {
-    background-color: #222;
-    padding: 12px 25px;
-    font-size: 18px;
-  }
-  
-  #resetButton {
-    background-color: #f44336;
-    padding: 12px 25px;
-    font-size: 18px;
-  }
+    background-color: #333;
+}
+
+#rainbowButton {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+}
+
+#resetButton {
+    background-color: #F44336;
+}
 
   .slider-container {
     display: flex;
@@ -82,13 +116,15 @@ body {
     font-weight: bold;
   }
 
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    align-items: center;
+  }
    /* Make the squares responsive */
    @media (max-width: 600px) {
     .container {
       width: 100%;
     }
-
-    .button-container {
-        flex-wrap: wrap;
-    }
-  }
+ }
